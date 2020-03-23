@@ -24,13 +24,8 @@ public class Main {
     }
 
     public static boolean check_pali(String s) {
-        int L = s.length();
-        for (int i = 0; i < L / 2; ++i) {
-            if (s.charAt(i) != s.charAt(L - i - 1)) {
-                return false;
-            }
-        }
-        return true;
+        StringBuilder a = (new StringBuilder(s)).reverse();
+        return s.equals(new String(a));
     }
 
     public static void task2(Scanner in) {
