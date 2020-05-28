@@ -34,7 +34,6 @@ public class CRUD {
         stmt.execute(sql);
         for (Hall h : halls) {
             sql = "insert into halls values( '" + h.getName() + "', '" + h.getNoSeats() + "' );";
-            System.out.println(sql);
             stmt.execute(sql);
         }
     }
@@ -84,7 +83,6 @@ public class CRUD {
         stmt.execute(sql);
         for (Show h : shows) {
             sql = "insert into shows values( '" + h.getName() + "', '" + h.getLocation().getName() + "', " +  h.getPrice() + " );";
-            System.out.println(sql);
             stmt.execute(sql);
         }
     }
@@ -128,7 +126,6 @@ public class CRUD {
             else {
                 sql = "insert into shows values ('" + h.getName() + "', '" +  h.getLocation().getName() +"', " + h.getPrice()  + "  );";
             }
-            System.out.println(sql);
             stmt.execute(sql);
 
         }
@@ -142,7 +139,6 @@ public class CRUD {
         stmt.execute(sql);
         for (Client h : clients) {
             sql = "insert into clients values( '" + h.getName() + "', '" + h.getEmail() + "', " + h.getSpentMoney() +  " );";
-            System.out.println(sql);
             stmt.execute(sql);
         }
     }
@@ -195,7 +191,6 @@ public class CRUD {
         stmt.execute(sql);
         for (Employee h : employees) {
             sql = "insert into employees values( '" + h.getName() + "', '" + h.getEmail() + "', " + h.getNoYears() +  " );";
-            System.out.println(sql);
             stmt.execute(sql);
         }
     }
